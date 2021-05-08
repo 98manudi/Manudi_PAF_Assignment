@@ -80,21 +80,45 @@ $(document).on("click", ".btnUpdate", function(event)
 // CLIENT-MODEL================================================================
 function validateItemForm()
 {
-	// CODE
+	// NIC
 	if ($("#NIC").val().trim() == "")
 	 {
 	 return "Insert NIC.";
 	 }
-	// NAME
+	// PRODUCT_ID
 	if ($("#productID").val().trim() == "")
 	 {
 	 return "Insert product ID.";
 	 } 
 	
-	// PRICE-------------------------------
+	// CREDIT NUMBER
 	if ($("#creditNumber").val().trim() == "")
 	 {
 	 return "Insert creditNumber.";
+	 }
+
+	// CVV
+	if ($("#cvv").val().trim() == "")
+	 {
+	 return "Insert cvv.";
+	 }
+	
+	//CHECK EXPIRE DATE
+	if ($("#expireDate").val().trim() == "")
+	 {
+	 return "Insert expire date.";
+	 }
+	
+	//DATE
+	if ($("#date").val().trim() == "")
+	 {
+	 return "Insert date.";
+	 }
+	
+	// AMOUNT
+	if ($("#amount").val().trim() == "")
+	 {
+	 return "Insert amount.";
 	 }
 	// is numerical value
 	var tmpPrice = $("#amount").val().trim();
